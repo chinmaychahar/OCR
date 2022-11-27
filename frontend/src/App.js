@@ -3,31 +3,31 @@ import { createWorker } from 'tesseract.js';
 import { useSpeechSynthesis } from 'react-speech-kit';
 import './App.css';
 function App() {
-  const [ocr, setOcr] = useState('');
-  const [imageData, setImageData] = useState(null);
-  const [progress, setProgress] = useState(0);
+  const [ocr, setOcr] = useState(''); 
+  const [imageData, setImageData] = useState(null); // image data
+  const [progress, setProgress] = useState(0); // progress bar
   const [textt, settText] = useState('');
-  const { speak } = useSpeechSynthesis();
+  const { speak } = useSpeechSynthesis(); // speech synthesis
 
-  const worker = createWorker({
+  const worker = createWorker({ // create worker
     logger: (m) => {
       console.log(m);
-      setProgress(parseInt(m.progress * 100));
+      setProgress(parseInt(m.progress * 100)); 
     },
   });
 
-  const handleOnClick = () => {
+  const handleOnClick = () => { // handle on click event of button
     speak({ text: ocr });
   };
 
-  const convertImageToText = async () => {
+  const convertImageToText = async () => { 
     if (!imageData) return;
-    await worker.load();
+    await worker.load(); 
     await worker.loadLanguage('eng');
     await worker.initialize('eng');
     const {
       data: { text },
-    } = await worker.recognize(imageData);
+    } = await worker.recognize(imageData); // recognize image
     setOcr(text);
   };
 
@@ -35,7 +35,7 @@ function App() {
     convertImageToText();
   }, [imageData]);
 
-  function handleImageChange(e) {
+  function handleImageChange(e) { 
     const file = e.target.files[0];
     if (!file) return;
     const reader = new FileReader();
@@ -62,7 +62,7 @@ function App() {
         </label>
       </div>
 
-      {progress < 100 && progress > 0 && (
+      {progress < 100 && progress > 0 && ( // progress bar
         <div>
           <div className="progress-label">Progress ({progress}%)</div>
           <div className="progress-bar">
@@ -77,8 +77,7 @@ function App() {
         </p>
         <div>
           <p>
-            <h1>Text to Speech Converter in React</h1>
-            <textarea className="textAreaStyle" placeholder={ocr}></textarea>
+            <textarea className="textAreaStyle" placeholder={ocr}></textarea> 
             <button
               className="buttonStyle"
               onClick={() => {
