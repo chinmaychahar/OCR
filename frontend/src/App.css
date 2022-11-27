@@ -10,7 +10,7 @@ body {
   color: cornflowerblue;
 }
 input {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .Heading {
   font-weight: bold;
@@ -19,6 +19,7 @@ input {
 .custom-file-upload {
   background-color: rgb(196, 195, 195);
   display: inline-block;
+  color: black;
   text-align: center;
   padding: 6px 12px;
   cursor: pointer;
@@ -32,13 +33,16 @@ p {
   width: 50vw;
 }
 .progress-label {
+  text-align: center;
   margin-bottom: 5px;
 }
 .progress-bar {
+  margin: auto;
+  padding-bottom: 10px;
+  text-align: center;
   background-color: whitesmoke;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 10px;
   max-width: 50vw;
 }
 .progress {
@@ -46,10 +50,14 @@ p {
   width: 0%;
   height: 10px;
 }
+.placeholderText {
+  text-align:center; 
+  vertical-align: middle;
+  margin: auto;
+}
 .textAreaStyle {
   width: 20vw;
   height: 10vh;
-  align-items: center;
   resize: both;
   pointer-events: none;
 }

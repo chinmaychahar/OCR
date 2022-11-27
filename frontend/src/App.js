@@ -74,8 +74,8 @@ function App() {
       )}
       <div className="imageDisplay">
         <img src={imageData} alt="" srcset="" />
-        <div>
-          <p>
+        <div> <br></br>
+          <p className='placeholderText'>
             <textarea className="textAreaStyle" placeholder={ocr}></textarea> <br></br>
             <button
               className="buttonStyle"
