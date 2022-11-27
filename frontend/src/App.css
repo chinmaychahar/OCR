@@ -4,41 +4,64 @@ body {
 .App {
   padding: 10px;
 }
+.Main {
+  padding-top: 40px;
+  text-align: center;
+  color: cornflowerblue;
+}
 input {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .Heading {
   font-weight: bold;
+  text-align: center;
 }
 .custom-file-upload {
   background-color: rgb(196, 195, 195);
   display: inline-block;
+  text-align: center;
   padding: 6px 12px;
   cursor: pointer;
 }
 img {
-  width: 21vw;
+  width: 20vw;
   height: auto;
-  margin-right: 50px;
+  text-align: center;
 }
 p {
   width: 50vw;
-}
-.display-flex {
-  display: flex;
 }
 .progress-label {
   margin-bottom: 5px;
 }
 .progress-bar {
-  background-color: rgb(22, 12, 172);
+  background-color: whitesmoke;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 10px;
   max-width: 50vw;
 }
 .progress {
-  background-color: rgb(22, 12, 172);
+  background-color: cornflowerblue;
   width: 0%;
   height: 10px;
+}
+.textAreaStyle {
+  width: 20vw;
+  height: 10vh;
+  align-items: center;
+  resize: both;
+  pointer-events: none;
+}
+.buttonStyle {
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }

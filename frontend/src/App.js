@@ -48,9 +48,11 @@ function App() {
   }
 
   return (
+    <div className="Main">
+      <h1>OCR TOOL</h1>
     <div className="App">
       <div>
-        <p className="Heading">UPLOAD AN IMAGE</p>
+       {/* <p className="Heading">UPLOAD AN IMAGE</p> */}
         <label class="custom-file-upload">
           <input
             type="file"
@@ -70,14 +72,11 @@ function App() {
           </div>
         </div>
       )}
-      <div className="display-flex">
+      <div className="imageDisplay">
         <img src={imageData} alt="" srcset="" />
-        <p>
-          <b>Rendered Text:</b> {ocr}
-        </p>
         <div>
           <p>
-            <textarea className="textAreaStyle" placeholder={ocr}></textarea> 
+            <textarea className="textAreaStyle" placeholder={ocr}></textarea> <br></br>
             <button
               className="buttonStyle"
               onClick={() => {
@@ -89,6 +88,7 @@ function App() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
