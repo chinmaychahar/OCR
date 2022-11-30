@@ -6,8 +6,8 @@ function App() {
   const [ocr, setOcr] = useState(''); 
   const [imageData, setImageData] = useState(null); // image data
   const [progress, setProgress] = useState(0); // progress bar
-  const [textt, settText] = useState('');
   const { speak } = useSpeechSynthesis(); // speech synthesis
+  const { cancel } =  useSpeechSynthesis(); 
 
   const worker = createWorker({ // create worker
     logger: (m) => {
@@ -18,6 +18,10 @@ function App() {
 
   const handleOnClick = () => { // handle on click event of button
     speak({ text: ocr });
+  };
+
+  const handleOnClickTwo = () => { // handle on click event of button
+    cancel();
   };
 
   const convertImageToText = async () => { 
@@ -84,6 +88,14 @@ function App() {
               }}
             >
               Listen
+            </button> 
+            <button
+              className="buttonStyle"
+              onClick={() => {
+                handleOnClickTwo();
+              }}
+            >
+              Stop
             </button>
           </p>
         </div>
