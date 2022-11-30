@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: beige;
 }
 .App {
   padding: 10px;
@@ -7,7 +7,7 @@ body {
 .Main {
   padding-top: 40px;
   text-align: center;
-  color: cornflowerblue;
+  color: thistle;
 }
 input {
   margin-bottom: 5px;
@@ -17,7 +17,8 @@ input {
   text-align: center;
 }
 .custom-file-upload {
-  background-color: rgb(196, 195, 195);
+  background-color: thistle;
+  border-radius: 5px;
   display: inline-block;
   color: black;
   text-align: center;
@@ -46,7 +47,7 @@ p {
   max-width: 50vw;
 }
 .progress {
-  background-color: cornflowerblue;
+  background-color: thistle;
   width: 0%;
   height: 10px;
 }
@@ -56,20 +57,27 @@ p {
   margin: auto;
 }
 .textAreaStyle {
-  width: 20vw;
+  width: 28vw;
   height: 10vh;
+  border-radius: 5px;
+  border: 1px solid thistle;
   resize: both;
   pointer-events: none;
+  overflow-y: scroll;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
 }
 .buttonStyle {
-  background-color: cornflowerblue;
-  color: white;
+  background-color: thistle;
+  color: black;
   border: none;
   padding: 10px 20px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: black;
   display: inline-block;
+  border-radius: 5px;  
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 18px 2px;
   cursor: pointer;
 }
