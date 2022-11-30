@@ -22,7 +22,7 @@
 ## Table of Contents
 
     - Overview
-    - Features and Interface
+    - Interface
     - Tech Stack
     - Setup Guide
     - Local Development
@@ -32,11 +32,13 @@
 
 ## 🚀 Overview
 
-IMReader Tool is a accessibility tool for processing images at ease. It is built using React.js for frontend, Tesseract.js for OCR and Speech Synthesis feature of the Web Speech API to render audio. 
+IMReader Tool is a accessibility tool for processing images at ease. It is built using React.js for frontend, Tesseract.js for OCR and Speech Synthesis feature of the Web Speech API to render audio. It is a small step towards making working with images more accessible. The project takes inspiration from recent developments in the area of OCR TTS to develop feasible reading assistants for differently-abled people while working with digital content. 
 
-It is a small step towards making working with images more accessible. The project takes inspiration from recent developments in the area of OCR TTS to develop feasible reading assistants for differently-abled people while consuming digital content.
+The tool mainly utilizes:
+  - **Tesseract.js** which is a library in pure javascript that supports more than 100 languages, automatic text orientation and script detection
+  - **React-Speech-Kit** hooks for in-browser Speech Recognition and Speech Synthesis
 
-## 💻 Features and Interface
+## 💻 Interface
 
 <table>
 	<tr>
