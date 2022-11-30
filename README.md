@@ -106,7 +106,7 @@ Kindly follow the below guidelines if you wish to contribute to the project:
 **1.** Fork [this](https://github.com/chinmaychahar/ocr) repository and clone it.
 
 ```
-git clone https://github.com/chinmaychahar/ocr.git
+git clone https://github.com/chinmaychahar/OCR.git
 ```
 
 **3.** Navigate to the project directory :file_folder: .
@@ -118,7 +118,7 @@ cd frontend
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/chinmaychahar/ocr.git
+git remote add upstream https://github.com/chinmaychahar/OCR.git
 ```
 
 **5.** Check the remotes for this repository.
