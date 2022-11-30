@@ -163,5 +163,6 @@ git push -u origin <your_branch_name>
 
 **14.** Click on `Create Pull Request`.
 
+## Made with ❤ by Chinmay
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
