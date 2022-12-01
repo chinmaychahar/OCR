@@ -103,68 +103,65 @@ Open http://localhost:3000 to view it in your browser.
 
 Kindly follow the below guidelines if you wish to contribute to the project:
 
-**1.** Fork [this](https://github.com/chinmaychahar/ocr) repository and clone it.
+1. Fork [this](https://github.com/chinmaychahar/ocr) repository and clone it
 
 ```
 git clone https://github.com/chinmaychahar/OCR.git
 ```
 
-**3.** Navigate to the project directory :file_folder: .
+2. Navigate to the project directory 
 
 ```
 cd frontend
 ```
 
-**4.** Add a reference(remote) to the original repository.
+3. Add a reference(remote) to the original repository
 
 ```
 git remote add upstream https://github.com/chinmaychahar/OCR.git
 ```
 
-**5.** Check the remotes for this repository.
+4. Check the remotes for this repository
 
 ```
 git remote -v
 ```
 
-**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+5. Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository)
 
 ```
 git pull upstream main
 ```
 
-**7.** Create a new branch.
+6. Create a new branch
 
 ```
 git checkout -b <your_branch_name>
 ```
 
-**8.** Perfom your desired changes to the code base.
-
-**9.** Track your changes:heavy_check_mark: .
+7. Perfom desired changes to the code base and track your changes 
 
 ```
 git add .
+git status
 ```
 
-**10.** Commit your changes .
+8. Commit your changes
 
 ```
 git commit -m "Relevant message"
 ```
 
-**11.** Push the committed changes in your feature branch to your remote repo.
+9. Push the committed changes in your feature branch to your remote repo
 
 ```
 git push -u origin <your_branch_name>
 ```
 
-**12.** To create a pull request, click on `compare and pull requests`.
+10. To create a pull request, click on `compare and pull requests`
 
-**13.** Add appropriate title and description to your pull request explaining your changes.
+11. Add appropriate title and description to your pull request explaining your changes
 
-**14.** Click on `Create Pull Request`.
-
-## Made with ❤ by Chinmay
+12. Click on `Create Pull Request`
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
