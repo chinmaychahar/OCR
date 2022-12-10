@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { createWorker } from 'tesseract.js';
-import { useSpeechSynthesis } from 'react-speech-kit';
+import { createWorker } from 'tesseract.js'; 
+import { useSpeechSynthesis } from 'react-speech-kit'; 
 import './App.css';
 function App() {
   const [ocr, setOcr] = useState(''); 
@@ -24,7 +24,7 @@ function App() {
     cancel();
   };
 
-  const convertImageToText = async () => { 
+  const convertImageToText = async () => {  
     if (!imageData) return;
     await worker.load(); 
     await worker.loadLanguage('eng');
@@ -35,12 +35,12 @@ function App() {
     setOcr(text);
   };
 
-  useEffect(() => {
+  useEffect(() => { // `useEffect` is a hook that runs a function when the state changes
     convertImageToText();
   }, [imageData]);
 
   function handleImageChange(e) { 
-    const file = e.target.files[0];
+    const file = e.target.files[0]; 
     if (!file) return;
     const reader = new FileReader();
     reader.onloadend = () => {
@@ -56,7 +56,6 @@ function App() {
       <h1>OCR TOOL</h1>
     <div className="App">
       <div>
-       {/* <p className="Heading">UPLOAD AN IMAGE</p> */}
         <label class="custom-file-upload">
           <input
             type="file"
